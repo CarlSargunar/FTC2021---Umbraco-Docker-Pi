@@ -2,6 +2,7 @@
 
 This demo is for people looking to get started with Docker and Microservices, and is a quick sample I've put together using the open source Umbraco Content Management system, running on Docker on a raspberry Pi. 
 
+
 ## These are the steps to run Umbraco on a Raspberry Pi
 
 Minimum Requirements :
@@ -9,9 +10,6 @@ Minimum Requirements :
 - At least 1 Raspberry Pi 3b+
     - Warning : this WILL be slow on a Pi 3b+
     - A Raspberry Pi 4 4gb or 8gb is recommended
-
-
-
 
 
 ## Documentation
@@ -40,10 +38,14 @@ Minimum Requirements :
 
 ## Links
 
+- Link to Slides : 
+    - [https://docs.google.com/presentation/d/18_ary97bHkR0sygsV-4DuEhQSCGHDJBYGDD33zNO0cQ/](https://docs.google.com/presentation/d/18_ary97bHkR0sygsV-4DuEhQSCGHDJBYGDD33zNO0cQ/)
+
+
 - Umbraco CMS : https://umbraco.com/
     - CMS Source : [https://github.com/umbraco/Umbraco-CMS](https://github.com/umbraco/Umbraco-CMS)
     - Documentation : [https://our.umbraco.com/documentation/reference/cms/](https://our.umbraco.com/documentation/reference/cms/)
 
-- The RGL LED array is based on the Pimoroni Unicorn Hat HD.
+- The RGB LED array is based on the Pimoroni Unicorn Hat HD.
     - You can buy one at [https://shop.pimoroni.com/products/unicorn-hat-hd](https://shop.pimoroni.com/products/unicorn-hat-hd).
     - There's a Git Repository associated with this project [https://github.com/pimoroni/unicorn-hat-hd](https://github.com/pimoroni/unicorn-hat-hd) with a lot of cool samples.

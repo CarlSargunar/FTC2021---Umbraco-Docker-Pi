@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Content>
+
+@using Clean.Core.Models.ViewModels
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
+
+
+@{
+    Layout = "master.cshtml";
+}
+
+@await Html.PartialAsync("~/Views/Partials/pageHeader.cshtml", new PageHeaderViewModel(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto text-cennter">
+                <h2>Hey, Friend!👋</h2>
+                <p>
+                    <form action="/umbraco/api/rmq/sendmessage" class="text-left" method="get">
+                        <div class="form-floating">
+                            <input input class="form-control" id="name" type="text" placeholder="Enter your name..." 
+                            data-sb-validations="required" data-val="true" data-val-required="Please enter your name" name="Name" value=""/>
+                            <label for="Name">What's your name?</label>
+                            <br/>
+                            <button class="btn btn-primary text-uppercase float-end" id="submitButton" type="submit">Go!</button>
+                        </div>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
